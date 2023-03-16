@@ -1,0 +1,816 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  /* old color */
+  /* color: rgb(2, 22, 39); */
+  /* lighter color */
+  color: rgb(6, 54, 97);
+  position: relative;
+  background-color: #f5f5f5;
+}
+
+strong {
+  color: #249369;
+  text-decoration: underline;
+}
+
+.secondary-color {
+  color: #249369;
+}
+
+.logo-img {
+  height: 100%;
+  object-fit: cover;
+}
+
+#navbarTogglerDemo02 {
+  justify-content: flex-end;
+}
+
+.landing-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./images/yvtz420dkoha1-1.png);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 80% 40%;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.landing-page a {
+  color: #aaaaaa;
+  position: absolute;
+  top: 80vh;
+  left: 0;
+  right: 0;
+}
+
+.landing-page svg:hover,
+.landing-page svg:active {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  border-radius: 50%;
+}
+
+/* skills tab start */
+
+.skills__tab-container {
+  display: flex;
+  justify-content: center;
+}
+
+.skills__tab {
+  display: inline-block;
+  background-color: white;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem 1rem;
+  border: none;
+  border-radius: 10rem;
+  margin-right: 2rem;
+  margin-top: 12rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  transform: translateY(-50%);
+}
+
+.skills__tab:hover {
+  background-color: rgb(7, 55, 99, 0.3);
+  color: white;
+}
+
+.skills__tab--active {
+  transform: translateY(-66%);
+  background-color: rgb(7, 55, 99);
+  color: white;
+}
+
+.skills__content {
+  display: none;
+  padding: 2.5rem 7rem 6.5rem 7rem;
+}
+
+.skills__content--active {
+  display: block;
+}
+
+.skills-bg {
+  background-color: white;
+  border-style: solid;
+  border-color: #004f31;
+  border-radius: 20px;
+}
+
+/* skills tab end */
+
+/* SLIDER START */
+.slider {
+  /* height = media query! */
+  /* height: 20rem; */
+  margin: 0 auto;
+  position: relative;
+
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 2rem;
+  width: 100%;
+  height: 40rem;
+
+  transition: transform 1s;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: inherit;
+  color: #333;
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+}
+
+.slider__btn--left {
+  left: 9%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+  right: 9%;
+  transform: translate(50%, -50%);
+}
+
+.dots {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dots__dot {
+  border: none;
+  background-color: #b9b9b9;
+  opacity: 0.7;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 1.75rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.dots__dot:last-child {
+  margin: 0;
+}
+
+.dots__dot--active {
+  background-color: #888;
+  opacity: 1;
+}
+/* SLIDER END */
+
+.tools-bg {
+  border-radius: 30px;
+  background-color: rgb(7, 55, 99, 0.1);
+}
+
+.tools-page {
+  /* center items in a flex container */
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tools-cards {
+  /* center items in a flex container */
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  padding: 5px 40px;
+  font-size: 1.5rem;
+  background-color: rgb(7, 55, 99);
+}
+
+.links-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./images/thb2cwpatsla1.png);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 30% 10%;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+/*  animation for links start */
+.scale-animation > a {
+  color: #a5c9ca;
+  text-decoration: none;
+}
+
+.scale-animation:hover {
+  transform: scale(1);
+  animation: 1.5s linear infinite scale;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* animation for links end */
+
+/* animation typewriter effect start */
+
+.typewriter .animate-typing {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #249369; /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  /* letter-spacing: 0.15em; Adjust as needed */
+  animation: typing 5s steps(40, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #249369;
+  }
+}
+
+/* animation typewriter effect end */
+
+@media only screen and (min-width: 0px) {
+  .nav-item {
+    margin-left: 25px;
+    font-size: 2rem;
+  }
+
+  .nav-item a:link,
+  .nav-item a:visited {
+    padding: 4px 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .nav-item a:hover,
+  .nav-item a:active {
+    color: black;
+    background-color: white;
+  }
+
+  .landing-title {
+    position: absolute;
+    top: 40vh;
+    left: 0;
+    right: 0;
+  }
+
+  .landing-title-1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 900;
+  }
+
+  .landing-title-2 {
+    color: white;
+    font-size: 3.2rem;
+    font-weight: 800;
+  }
+
+  .about-me-photo {
+    /* does not fit in galaxy fold (280px)... too thin to fit  */
+    max-width: 200px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  .skills-page {
+    max-width: 100rem;
+    margin: 5rem auto 0 auto;
+    border-radius: 30px;
+    background-color: rgb(7, 55, 99, 0.1);
+  }
+
+  .projects-page {
+    padding-top: 7rem;
+  }
+
+  .projects-container {
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #249369;
+  }
+
+  .slider {
+    /* height= media query */
+    height: 40rem;
+  }
+
+  /* arrange also width.. media query */
+  .slider img {
+    max-width: 300px;
+    max-height: 150px;
+    object-fit: cover;
+    margin: auto auto 4rem auto;
+  }
+
+  .tools-cards {
+    min-width: 240px;
+    max-width: 398px;
+  }
+
+  .tool-card {
+    width: 80px;
+    height: 80px;
+    padding: 1rem;
+  }
+
+  .xs-hidden-lg-none-custom {
+    visibility: hidden;
+  }
+
+  .contact-and-visit-page {
+    padding-top: 65px;
+  }
+
+  .contact-and-visit-page iframe {
+    border: 0;
+  }
+
+  label {
+    font-size: 1.6rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"] {
+    font-size: 1.4rem;
+  }
+
+  textarea {
+    font-size: 1.4rem !important;
+  }
+
+  .iframe-size-responsive {
+    width: 100%;
+    height: 400px;
+  }
+
+  .link-elements {
+    position: relative;
+    top: 40vh;
+    left: 0;
+    right: 0;
+  }
+
+  .more-info-title-1 {
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 900;
+  }
+
+  .links a:link,
+  .links a:visited {
+    color: white;
+    font-size: 1.6rem;
+    padding: 4px 40px;
+    border-radius: 20px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .links a:hover,
+  .links a:active {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .nav-item {
+    font-size: 2.8rem;
+  }
+
+  button.navbar-toggler {
+    transform: scale(1.5);
+    margin-right: 50px;
+  }
+
+  .landing-title-1 {
+    font-size: 4.8rem;
+  }
+
+  .landing-title-2 {
+    font-size: 3.6rem;
+  }
+
+  .about-me-photo {
+    max-width: 280px;
+  }
+
+  h2 {
+    font-size: 2.6rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  .projects-page {
+    padding-top: 8rem;
+  }
+
+  .tools-cards {
+    max-width: 500px;
+  }
+
+  .tool-card {
+    width: 125px;
+    height: 125px;
+    padding: 1rem;
+  }
+
+  .xs-invisible-sm-none-custom {
+    visibility: visible;
+    display: none;
+  }
+
+  label {
+    font-size: 2rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"] {
+    font-size: 1.6rem;
+  }
+
+  textarea {
+    font-size: 1.6rem !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-item {
+    font-size: 3.4rem;
+  }
+
+  button.navbar-toggler {
+    transform: scale(1.5);
+    margin-right: 50px;
+  }
+
+  .landing-title {
+    position: absolute;
+    top: 40vh;
+    left: 0;
+    right: 0;
+  }
+
+  .landing-title-1 {
+    font-size: 6.4rem;
+  }
+
+  .landing-title-2 {
+    font-size: 5.8rem;
+  }
+
+  .about-me-photo {
+    max-width: 450px;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h4 {
+    font-size: 3.2rem;
+  }
+
+  p {
+    font-size: 2.8rem;
+  }
+
+  label {
+    font-size: 3.2rem;
+  }
+
+  .skills-padding-md-lg-xl {
+    padding-top: 8rem;
+  }
+
+  .skills__tab {
+    font-size: 3rem;
+  }
+
+  .projects-page {
+    padding-top: 10rem;
+  }
+
+  .slider {
+    /* height= media query */
+    height: 60rem;
+  }
+
+  /* arrange also width.. media query */
+  .slider img {
+    max-width: 400px;
+    max-height: 200px;
+    object-fit: cover;
+    margin: auto auto 6rem auto;
+  }
+
+  .tools-cards {
+    max-width: 640px;
+  }
+
+  .tool-card {
+    width: 160px;
+    height: 130px;
+    padding: 1rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"] {
+    font-size: 3rem;
+  }
+
+  input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .btn {
+    font-size: 3rem;
+  }
+
+  .contact-and-visit-page {
+    padding-top: 9rem;
+  }
+
+  .contact-padding {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .visit-padding {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  label {
+    font-size: 3rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"] {
+    font-size: 2.8rem;
+  }
+
+  textarea {
+    font-size: 2.8rem !important;
+  }
+
+  .iframe-size-responsive {
+    width: 100%;
+    height: 350px;
+  }
+
+  .link-elements {
+    top: 35vh;
+  }
+
+  .more-info-title-1 {
+    font-size: 5.8rem;
+  }
+
+  .links a:link {
+    font-size: 3.4rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar-brand {
+    max-width: 250px;
+  }
+
+  .nav-item {
+    font-size: 2.4rem;
+  }
+
+  .landing-title {
+    top: 30vh;
+  }
+
+  .landing-title-1 {
+    font-size: 6.4rem;
+  }
+
+  .landing-title-2 {
+    font-size: 5.8rem;
+  }
+
+  .about-me-photo {
+    max-width: 300px;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h4 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+  .skills-padding-md-lg-xl {
+    padding-top: 1rem;
+  }
+
+  .slider {
+    /* height= media query */
+    height: 40rem;
+  }
+
+  /* arrange also width.. media query */
+  .slider img {
+    max-width: 400px;
+    max-height: 200px;
+    object-fit: cover;
+    margin: auto auto 2rem auto;
+  }
+
+  .tools-cards {
+    max-width: 720px;
+  }
+
+  .tool-card {
+    width: 120px;
+    height: 120px;
+  }
+
+  .contact-and-visit-page {
+    padding-top: 4rem;
+  }
+
+  label {
+    font-size: 2.4rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"] {
+    font-size: 2rem;
+  }
+
+  textarea {
+    font-size: 2rem !important;
+  }
+
+  .btn {
+    font-size: 2rem;
+  }
+
+  .link-elements {
+    top: 30vh;
+  }
+
+  .more-info-title-1 {
+    font-size: 4rem;
+  }
+
+  .links a:link {
+    font-size: 2.4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .navbar-brand {
+    max-width: 200px;
+  }
+
+  .nav-item {
+    font-size: 2.4rem;
+  }
+
+  .about-me-photo {
+    max-width: 350px;
+  }
+
+  .skills-padding-md-lg-xl {
+    padding-top: 0rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  h4 {
+    font-size: 2.4rem;
+  }
+
+  p {
+    font-size: 2.2rem;
+  }
+
+  .tool-card {
+    height: 160px;
+  }
+
+  label {
+    font-size: 2.6rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"] {
+    font-size: 2.2rem;
+  }
+
+  textarea {
+    font-size: 2.2rem !important;
+  }
+
+  .more-info-title-1 {
+    font-size: 4.4rem;
+  }
+
+  .links a:link {
+    font-size: 2.6rem;
+  }
+}

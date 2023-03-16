@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+    <!-- Roboto Font -->
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <title>Capstone 1 - Jeff Legaspi</title>
+  </head>
+  <body>
+    <!-- references -->
+    <!-- DO NOT REMOVE NOTE: ALL ROWS (BY BOOTSTRAP) PUT m-0 or mx-0 TO PREVENT HORIZONTAL SCROLLING -->
+    <!-- DO NOT REMOVE NOTE: C-R-C rule.. container- row- then column  -->
+
+    <!-- NAV BAR START -->
+    <nav id="navbar" class="fixed-top navbar navbar-expand-lg navbar-dark">
+      <a
+        class="navbar-brand col-6 col-sm-5 col-md-5 col-lg-3"
+        href="#landing-page"
+      >
+        <div class="logo">
+          <img
+            id="logo-img"
+            class="img-fluid"
+            src="./images/output-onlinepngtools.png"
+          />
+        </div>
+      </a>
+      <button
+        class="navbar-toggler col-2"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="col-auto collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#about-me-page">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills-page">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects-page">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-and-visit-page">Contact Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#links-page">More Info</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- NAV BAR END -->
+
+    <!-- test navbar sample from bootstrap only start -->
+    <!-- <nav class="navbar navbar-default fixed-top">
+      <div class="container">
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search" />
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+    </nav> -->
+    <!-- test navbar sample from bootstrap only end -->
+
+    <!-- LANDING PAGE START -->
+    <div id="landing-page" class="landing-page">
+      <div class="landing-title text-center typewriter">
+        <h1 class="landing-title-1">JEFF LEGASPI</h1>
+        <h1 class="landing-title-2 animate-typing">WEB DEVELOPER</h1>
+      </div>
+      <a class="text-center" href="#about-me-page">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="50"
+          height="50"
+          fill="currentColor"
+          class="bi bi-arrow-down"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+          />
+        </svg>
+      </a>
+    </div>
+    <!-- LANDING PAGE END -->
+
+    <!-- ABOUT ME PAGE START -->
+    <div class="container min-vh-100" id="about-me-page">
+      <div class="about-me-page row m-0 p-5">
+        <div class="col-12 col-lg-5 text-center align-self-center mt-5 p-5">
+          <img
+            class="img-fluid about-me-photo"
+            src="./images/LEGASPI, JohnJefferson P._2642.jpg"
+          />
+        </div>
+        <div class="col-12 col-lg-7 text-center align-self-center">
+          <h2>Hello! My name is Jeff and I am a</h2>
+          <h2>Full-Stack Web Developer.</h2>
+          <h2 class="secondary-color pt-3">Hoping to work with you soon!</h2>
+        </div>
+      </div>
+    </div>
+    <!-- ABOUT ME PAGE END -->
+
+    <!-- SKILLS PAGE START -->
+    <div class="container min-vh-100 skills-padding-md-lg-xl" id="skills-page">
+      <div class="skills-page mb-5">
+        <div class="skills__tab-container">
+          <button
+            class="skills__tab skills__tab--1 skills__tab--active"
+            data-tab="1"
+          >
+            Skills
+          </button>
+          <button class="skills__tab skills__tab--2" data-tab="2">
+            Experience
+          </button>
+          <button class="skills__tab skills__tab--3" data-tab="3">
+            Education
+          </button>
+        </div>
+        <div class="skills__content skills__content--1 skills__content--active">
+          <div class="p-3 my-3 skills-bg">
+            <p>
+              I am comfortable around both
+              <strong>front-end and back-end</strong> coding languages,
+              development frameworks and third-party libraries.
+            </p>
+          </div>
+          <div class="p-3 my-3 skills-bg">
+            <p>
+              I am a <strong>team player</strong> and
+              <strong>work with design teams</strong> to ensure that user
+              interactions on web pages are intuitive and engaging.
+            </p>
+          </div>
+          <div class="p-3 my-3 skills-bg">
+            <p>
+              I also <strong>provide back-end functionality</strong> that can
+              run smoothly from any device or browser type commonly used today.
+            </p>
+          </div>
+        </div>
+
+        <div class="skills__content skills__content--2">
+          <div class="p-3 my-3 skills-bg">
+            <h4>Software Developer</h4>
+            <h4>May 2022 - Present</h4>
+            <p class="secondary-color">Freelancing</p>
+          </div>
+          <div class="p-3 my-3 skills-bg">
+            <h4>Electrical Engineer</h4>
+            <h4>Sept 2019 - April 2022</h4>
+            <p class="secondary-color">
+              Worked with electrical projects in various locations including
+              shopping malls, high-rise building, and supermarket.
+            </p>
+          </div>
+          <div class="p-3 my-3 skills-bg">
+            <h4>Special Science Teacher I</h4>
+            <h4>PCSHS - DepEd</h4>
+            <h4>Sept 2017 - May 2019</h4>
+            <p class="secondary-color">
+              Handled senior high school students and taught subjects including
+              Physics and Earth Science.
+            </p>
+          </div>
+        </div>
+
+        <div class="skills__content skills__content--3">
+          <div class="p-3 my-3 skills-bg">
+            <h4>Zuitt Coding Bootcamp</h4>
+            <h4>Developer Career Program - Full Stack Web Development</h4>
+            <p class="secondary-color">March 2022 - April 2023</p>
+          </div>
+          <div class="p-3 my-3 skills-bg">
+            <h4>FreeCodeCamp</h4>
+            <h4>Responsive Web Design Developer Certification</h4>
+            <p class="secondary-color">Sept 2022</p>
+          </div>
+          <div class="p-3 my-3 skills-bg">
+            <h4>Registered Electrical Engineer</h4>
+            <p class="secondary-color">April 2018</p>
+          </div>
+          <div class="p-3 my-3 skills-bg">
+            <h4>Technological University of the Philippines - Taguig</h4>
+            <p class="secondary-color">May 2013 - July 2017</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SKILLS PAGE END -->
+
+    <!-- PROJECTS PAGE START -->
+    <div class="projects-page min-vh-100" id="projects-page">
+      <h2 class="text-center">Projects</h2>
+      <div class="container projects-container mb-5">
+        <div class="slider text-center">
+          <div class="slide">
+            <img
+              class="img-fluid"
+              src="./images/website-portfolio-for-developer-1.png"
+            />
+            <h4 class="secondary-color">Front-end Development</h4>
+            <p>
+              I built this web page by using modern practices in
+              <strong>HTML and CSS</strong>. This project responds to different
+              screen sizes including desktops, tablets, and mobile phones.
+            </p>
+          </div>
+
+          <div class="slide">
+            <img class="img-fluid" src="./images/heroku8-dashboard.png" />
+            <h4 class="secondary-color">Back-end Development</h4>
+            <p>
+              I developed an <strong>application</strong> that connects to
+              <strong>databases</strong> and manages data using MongoDB,
+              Node.js, REST Architecture, Express.js, Postman, Heroku.
+            </p>
+          </div>
+
+          <div class="slide">
+            <img
+              class="img-fluid"
+              src="./images/ecommerce-sample-webpage.png"
+            />
+            <h4 class="secondary-color">Full-stack Development</h4>
+            <p>
+              I built an <strong>e-commerce app</strong> that demonstrates
+              back-end know-how with an understanding of client and server
+              interaction. I integrated the server into a reactive single page
+              application, in an end-to-end experience of how modern web
+              applications are built.
+            </p>
+          </div>
+
+          <button class="slider__btn slider__btn--left">&larr;</button>
+          <button class="slider__btn slider__btn--right">&rarr;</button>
+          <div class="dots"></div>
+        </div>
+      </div>
+    </div>
+    <!-- PROJECTS PAGE START -->
+
+    <!-- TOOLS PAGE START -->
+    <div class="container tools-bg pt-5 pb-5">
+      <div class="col-12 text-center align-self-center">
+        <h2>Tools and Languages</h2>
+        <h4 class="secondary-color pt-3">
+          I have an extensive knowledge of the following technologies and tools
+          in my web development process
+        </h4>
+      </div>
+
+      <div id="tools-page" class="tools-page">
+        <!-- https://stackoverflow.com/questions/57039195/how-to-hide-element-for-mobile-device-with-bootstrap4
+          bootstrap cheat sheet -->
+        <div class="tools-cards row m-0 mt-5 text-center align-middle">
+          <div class="tool-card col-3 col-sm-3 col-md-3 col-lg-2">
+            <img class="img-fluid" src="./images/logo-html5.png" />
+          </div>
+          <div class="tool-card col-3 col-sm-3 col-md-3 col-lg-2">
+            <img class="img-fluid" src="./images/logo-css3.png" />
+          </div>
+          <div class="tool-card col-3 col-sm-3 col-md-3 col-lg-2">
+            <img class="img-fluid" src="./images/logo-bootstrap.png" />
+          </div>
+          <div class="tool-card col-3 col-sm-3 col-md-3 col-lg-2">
+            <img class="img-fluid" src="./images/logo-javascript.png" />
+          </div>
+          <div class="tool-card col-3 col-sm-3 col-md-3 col-lg-2">
+            <img class="img-fluid" src="./images/logo-mongodb.png" />
+          </div>
+          <div class="tool-card col-3 col-sm-3 col-md-3 col-lg-2">
+            <img class="img-fluid" src="./images/logo-expressjs.png" />
+          </div>
+          <div class="tool-card col-3 col-sm-3 col-md-3 col-lg-2">
+            <img class="img-fluid" src="./images/logo-react.png" />
+          </div>
+          <div class="tool-card col-3 col-sm-3 col-md-3 col-lg-2">
+            <img class="img-fluid" src="./images/logo-nodejs.png" />
+          </div>
+          <div class="tool-card col-3 col-sm-3 col-md-3 col-lg-2">
+            <img class="img-fluid" src="./images/logo-heroku.png" />
+          </div>
+          <div class="tool-card col-3 col-sm-3 col-md-3 col-lg-2">
+            <img class="img-fluid" src="./images/logo-git.png" />
+          </div>
+          <div class="tool-card col-3 col-sm-3 col-md-3 col-lg-2">
+            <img class="img-fluid" src="./images/logo-gitlab-ci-cd.png" />
+          </div>
+          <div class="tool-card col-3 col-sm-3 col-md-3 col-lg-2">
+            <img class="img-fluid" src="./images/logo-postman.png" />
+          </div>
+          <div class="tool-card col-3 col-sm-3 col-md-3 col-lg-2">
+            <img class="img-fluid" src="./images/logo-sublime-text-3.png" />
+          </div>
+          <div class="tool-card col-3 col-sm-3 col-md-3 col-lg-2">
+            <img class="img-fluid" src="./images/logo-rest.png" />
+          </div>
+          <div class="tool-card col-3 col-sm-3 col-md-3 col-lg-2">
+            <img class="img-fluid" src="./images/logo-sublime-text-3.png" />
+          </div>
+          <div class="tool-card col-3 col-sm-3 col-md-3 col-lg-2">
+            <img class="img-fluid" src="./images/pngwing.co-mysql.png" />
+          </div>
+          <div class="tool-card col-3 col-sm-3 col-md-3 col-lg-2">
+            <img class="img-fluid" src="./images/pngwing.com-laravel.png" />
+          </div>
+          <div class="tool-card col-3 col-sm-3 col-md-3 col-lg-2">
+            <img class="img-fluid" src="./images/pngwing.com-php.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TOOLS PAGE END -->
+
+    <!-- CONTACTS AND VISIT PAGE START -->
+    <div class="container">
+      <div
+        id="contact-and-visit-page"
+        class="contact-and-visit-page row m-0 mb-5 g-5"
+      >
+        <div class="col-12 col-lg-6">
+          <div class="contact-padding contact-max-size">
+            <h2 class="secondary-color">Contact Me</h2>
+            <form action="https://www.google.com/">
+              <div class="form-group">
+                <label for="full-name">Full Name:</label>
+                <input
+                  type="text"
+                  name="full-name"
+                  id="full-name"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required
+                  autocomplete
+                />
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="name@example.com"
+                  required
+                  autocomplete
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  class="form-control"
+                  placeholder="0910-123-4567"
+                  autocomplete
+                />
+                <label>Preferred Contact:</label>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" name="contact1" id="contact1" checked />
+                <label for="contact1">Email</label>
+                <input type="checkbox" name="contact2" id="contact2" />
+                <label for="contact2">Phone</label>
+              </div>
+              <div class="form-group">
+                <label for="message">Message </label>
+                <textarea
+                  name="message"
+                  id="message"
+                  class="form-control"
+                  placeholder="Your Message Here"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-dark mt-2 mb-5"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="visit-padding visit-max-size">
+            <h2 class="secondary-color">How do you like your coffee?</h2>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2232.7582790587776!2d121.04209896072571!3d14.365487305324407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d10a629c7a33%3A0x2e2fac0bce2a7084!2sStarbucks%20-%20San%20Antonio%20Exchange%20Terminal!5e0!3m2!1sen!2sph!4v1678600795528!5m2!1sen!2sph"
+                class="iframe-size-responsive"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="form-group">
+              <label for="appointment-date">Choose date of appointment</label>
+              <input
+                type="date"
+                name="appointment-date"
+                id="appointment-date"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                class="form-control"
+                placeholder="Your Message Here"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-dark mt-2 mb-5"
+              data-toggle="modal"
+              data-target="#exampleModal2"
+            >
+              Book
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTACTS AND VISIT PAGE END -->
+
+    <!-- LINKS PAGE START -->
+    <div id="links-page" class="links-page">
+      <div class="link-elements">
+        <h1 class="more-info-title-1 text-center">Let's work together..</h1>
+        <div class="links text-center">
+          <div class="scale-animation">
+            <a href="https://www.facebook.com/johnjeff01" target="_blank">
+              <i class="fab fa-facebook-square"></i>
+              <span class="profile-desc">Facebook</span></a
+            >
+          </div>
+          <div class="scale-animation">
+            <a href="https://twitter.com/johnjeff01" target="_blank">
+              <i class="fab fa-twitter"></i>
+              <span class="profile-desc">Twitter</span>
+            </a>
+          </div>
+          <div class="scale-animation">
+            <a href="mailto: johnjeff_legaspi@gmail.com" target="_blank">
+              <i class="fas fa-at"></i>
+              <span class="profile-desc">Send an email</span>
+            </a>
+          </div>
+          <div class="scale-animation">
+            <a href="tel:+639999999999" target="_blank">
+              <i class="fas fa-mobile-alt"></i>
+              <span class="profile-desc">Call me</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- LINKS PAGE END -->
+
+    <!-- Modal for send start -->
+    <div
+      class="modal fade text-dark"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">
+              Thank you for contacting me!
+            </h4>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <h2 class="secondary-color">Message Sent</h2>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for send end -->
+
+    <!-- Modal for book start -->
+    <div
+      class="modal fade text-dark"
+      id="exampleModal2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel2"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel2">
+              Hoping to see you soon!
+            </h4>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <h2 class="secondary-color">Successfully Booked</h2>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for book end -->
+
+    <!-- Bootstrap Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
